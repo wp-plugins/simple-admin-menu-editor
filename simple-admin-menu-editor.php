@@ -5,7 +5,7 @@ Plugin Name: Simple Admin Menu Editor
 Plugin URI: http://karmaprogressive.com/2010/09/our-wordpress-plugin-simple-admin-menu-editor/
 Description: Easily and Simply edit what is in your admin nav. That's it.
 Author: Chris Nowak
-Version: 1.0.1
+Version: 1.0.2
 Author URI: http://facebook.com/chrisnowak
 */
 
@@ -23,7 +23,7 @@ function add_same_menu_option(){
 	'Simple Admin Menu Editor',
 	'Admin Menu Editor',
 	'manage_options',
-	__FILE__,
+	basename(__FILE__),
 	'same_menu_options'
 	);
 }
@@ -32,7 +32,7 @@ add_action('admin_menu','add_same_menu_option');
 
 function same_admin_help($text, $screen) {
 	// Let the default WP Dashboard help stuff through on other Admin pages
-	$link = '</p><p><a href="'.get_bloginfo('url').'/wp-admin/options-general.php?page=simple-admin-menu-editor.php">Show/Hide Nav Links</a></p></div>';
+	$link = '</p><p><a href="/wp-admin/options-general.php?page=simple-admin-menu-editor.php">Show/Hide Nav Links</a></p></div>';
 	return str_replace('</p></div>',$link,$text);
 }
 
