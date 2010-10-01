@@ -16,7 +16,7 @@ Us too. So we made this handy little plugin that gives you little checkboxes nex
 
 == Installation ==
 
-1. Upload `simple-admin-menu-editor.php` to the `/wp-content/plugins/` directory
+1. Upload the folder `simple-admin-menu-editor` to the `/wp-content/plugins/` directory
 2. Activate the plugin through the 'Plugins' menu in WordPress
 3. A new menu item, Admin Menu Editor, will show up under Settings
 
