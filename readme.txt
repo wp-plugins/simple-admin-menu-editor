@@ -4,7 +4,7 @@ Donate link: http://karmaprogressive.com/2010/09/our-wordpress-plugin-simple-adm
 Tags: admin,menu,edit,nav
 Requires at least: 3.0
 Tested up to: 3.0.1
-Stable tag: 1.0.1
+Stable tag: 1.0.2
 
 Easily and Simply show and hide what is in your admin nav. That's it.
 
@@ -31,6 +31,9 @@ If the Simple Admin Menu Editor link is hidden, a link for it will show up in th
 1. Admin Editor in action
 
 == Changelog ==
+
+= 1.0.2 =
+* Big bug fix
 
 = 1.0.1 =
 * Fixed a bug that could hide the users entire menu on install
