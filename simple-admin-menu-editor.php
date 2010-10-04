@@ -44,8 +44,8 @@ global $menu, $remenu, $submenu, $resubmenu;
 	$is_visible=false;
 	$remenu = $menu; $resubmenu = $submenu;
 		$new_menu = get_option('admin-new-menu');
-			if($new_menu) {
-				$new_menu = unserialize($new_menu);
+			$new_menu = unserialize($new_menu);
+				if($new_menu) {
 					//print_r($new_menu);
 					foreach($menu as $n=>$m) {
 						if(!$new_menu[$n]) {
@@ -71,7 +71,7 @@ global $menu, $remenu, $submenu, $resubmenu;
 					}
 					
 				if($is_visible==false) {add_action( 'contextual_help', 'same_admin_help' );}			
-			}
+				}
 
 		//$menu[5] = array( __('Projects'), 'edit_posts', 'edit.php', '', 'open-if-no-js menu-top', 'menu-posts', 'div' );
 }
