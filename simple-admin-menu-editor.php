@@ -30,7 +30,7 @@ function add_same_menu_option(){
 add_action('admin_menu','add_same_menu_option');
 
 
-function same_admin_help($text, $screen) {
+function same_admin_help($text) {
 	// Let the default WP Dashboard help stuff through on other Admin pages
 /*
 	$link = '</p><p><a href="/wp-admin/options-general.php?page=simple-admin-menu-editor.php">Show/Hide Nav Links</a></p></div>';
@@ -70,7 +70,7 @@ global $menu, $remenu, $submenu, $resubmenu;
 						} 
 					}
 					
-				if($is_visible==false) {add_action( 'contextual_help', 'same_admin_help' );}			
+				if($is_visible==false) {add_action( 'contextual_help', 'same_admin_help', 999 );}			
 				}
 
 		//$menu[5] = array( __('Projects'), 'edit_posts', 'edit.php', '', 'open-if-no-js menu-top', 'menu-posts', 'div' );
